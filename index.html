@@ -13,11 +13,18 @@
 
     <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIは非表示） -->
     <a-scene embedded arjs="debugUIEnabled:false;">
+    <!-- 3dオブジェクトをアセットに -->
+      <a-assets>
+        <a-asset-item id="guitar" src="ElectricGuitar.gltf"></a-asset-item>
+      </a-assets>
 
       <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
       <a-marker type="pattern" url="pattern-marker.patt">
         <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
         <a-box position="0 0.5 0" wireframe="true"></a-box>
+        <!-- Using the asset management system. -->
+        <a-gltf-model src="#guitar" position="3 0.5 2"></a-gltf-model>
+
       </a-marker>           
 
       <!-- AR用のカメラを置く -->
