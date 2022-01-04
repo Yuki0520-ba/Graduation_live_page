@@ -1,3 +1,4 @@
 # Graduation_live_page
 
-AR.jsとAr-Flameを用いたWeb-ARを体験できるページ
+AR.jsとAR-Flameを用いた簡単なWeb-ARを実装
+
